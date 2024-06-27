@@ -21,6 +21,7 @@ const TodoList = () => {
   const todoDone = (data) => {
     dispatch(setDoneTodo(data))
     dispatch(deleteTodo(data))
+    setDoneIcon(null)
   }
 
   const toggleDone = (indexNum) => {
